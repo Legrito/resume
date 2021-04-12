@@ -204,6 +204,8 @@ button:focus {
     color: #000;
 }
 
+/* Стили проблемного блока -------------*/
+
 .projects {
     position: absolute;
     z-index: 70;
@@ -216,6 +218,8 @@ button:focus {
     transform: translateY(100%);
     opacity: 1;    
 }
+
+/* ---------------------------------------------- */
 
 .btn.btn-white{
     border-color: var(--dark-accent-color);
