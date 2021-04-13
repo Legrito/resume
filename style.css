@@ -12,13 +12,13 @@
     /* outline: 1px solid green; */
 }
 
-.preload * {
+/* .preload * {
     transition: none;
     -webkit-transition: none !important;
     -moz-transition: none !important;
     -ms-transition: none !important;
     -o-transition: none !important;
-  }
+  } */
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -54,6 +54,10 @@ button:focus {
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+.about-left-content {
+    z-index: 75;
 }
 .about-left-content > div{
     background: var(--light-accent-color);
@@ -204,22 +208,7 @@ button:focus {
     color: #000;
 }
 
-/* Стили проблемного блока -------------*/
 
-.projects {
-    position: absolute;
-    z-index: 70;
-    opacity: 0;
-    width: 40%;
-    transition: opacity, transform 2s, 0.25s ease-in-out;
-}
-
-.projects.js-block {
-    transform: translateY(100%);
-    opacity: 1;    
-}
-
-/* ---------------------------------------------- */
 
 .btn.btn-white{
     border-color: var(--dark-accent-color);
@@ -301,8 +290,81 @@ button:focus {
     align-items: baseline;
 }
 
+.about-me-title {
+    margin-bottom: 10px;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+  }
 
-@media screen and (min-width: 992px){
+.profession-title {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .profession-company {
+    color: var(--dark-accent-color);
+  }
+  
+  .profession-time {
+    color: #a8a8a8;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  .profession-divider {
+    color: #000;
+  }
+  
+  .profession-duties {
+    margin-top: 14px;
+    margin-bottom: 30px;
+  }
+  
+  .profession-duties-item {
+    margin-left: 15px;
+    color: #595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  .education-place {
+    color: var(--dark-accent-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .education-speciality {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 14px;
+  }
+  
+  .education-divider {
+    color: #000;
+  }
+  
+  .education-time {
+    color: #a8a8a8;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+
+
+@media only screen and (min-width: 992px){
     .about-wrapper{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -315,4 +377,37 @@ button:focus {
         position: absolute;
         right: -50px;
     }
+
+    .projects {
+    transform: translateX(-100%);
+    position: absolute;
+    z-index: 70;
+    opacity: 0;    
+    transition: all 0.3s ease-in-out;
 }
+
+.projects.js-block {
+    position: relative;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+    .resume {
+        transform: translateY(-150%);
+        position: absolute;
+        z-index: 70;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+      }  
+    
+    .resume.js-block {
+        transform: translateY(0);
+        margin-top: 20px;   
+        position: relative;
+        opacity: 1; 
+        transition: all 1s ease-in-out;
+    }
+    
+}
+
+
