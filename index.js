@@ -21,3 +21,5 @@ projectBtnEl.addEventListener('click', () => {
     resumeEl.classList.remove('js-block');
   }
 });
+
+
