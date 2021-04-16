@@ -427,6 +427,10 @@ button:focus {
     .profession-title {
         margin-bottom: 5px;
     }
+
+    .education-wrapper {
+        padding-bottom: 50px;
+    }
     
 }
 
@@ -458,6 +462,24 @@ button:focus {
     .resume {
         display: block;
         margin-top: 30px;
+    }
+    .profession-title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .about-me-title {
+        margin-top: 20px;
+    }
+    .education-speciality {
+        margin-bottom: 10px;
+    }
+    .education-place {
+        margin-bottom: 10px;
+    }
+
+    .profession-duties {
+        list-style: disc;
     }
 }
 
@@ -509,7 +531,36 @@ button:focus {
         opacity: 1; 
         transition: all 1s ease-in-out;
     }
+
+    .prof-descr-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
     
+    .profession-title {
+        margin-top: 20px;
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+
+    .profession-duties {
+        margin: 0;
+    }
+
+    .about-me-title {
+        margin-top: 20px;
+    }
+    .education-speciality {
+        margin-right: 30px;
+    }
+    .education-place {
+        margin-bottom: 10px;
+    }
+
+    .profession-duties {
+        list-style: disc;
+    }
 }
 
 
