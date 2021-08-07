@@ -284,7 +284,8 @@ button:focus {
 .projects-list li:nth-child(3):before,
 .projects-list li:nth-child(4):before,
 .projects-list li:nth-child(5):before,
-.projects-list li:nth-child(6):before {
+.projects-list li:nth-child(6):before,
+.projects-list li:nth-child(7):before {
   content: "✓";
   margin-right: 10px;
   font-size: 18px;
